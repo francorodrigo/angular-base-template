@@ -1,0 +1,12 @@
+<div>
+<p>{{textToShow}}</p>
+<div *ngFor="let product of products">
+  <h2>
+  {{product.title}}
+  </h2>
+  <p *ngIf="product.description">
+    {{product.description}}
+  </p>
+</div>
+<button class="button-test" title="button-test" type="button" (click)="setTextToShow()">Click me!</button>
+</div>
